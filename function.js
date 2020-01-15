@@ -13,9 +13,9 @@ function character(name,) {
   },
   this.potential = skills.skillList,
   this.chosen = {},
-  this.findRequiredStat = function(){
+  this.findRequiredStat = () => {
     for (i=0; i < this.stats.length; i++){
-      var stat = this.stats[i][0]
+      let stat = this.stats[i][0]
       for (var name in this.chosen){
         if (this.chosen[name].statRequirement[stat] > this.stats[i][1]){
         this.stats[i][1] = ( this.chosen[name].statRequirement[stat])
