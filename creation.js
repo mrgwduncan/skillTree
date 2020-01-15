@@ -1,0 +1,41 @@
+const skills = require('./skills.js')
+const character = require('./function.js')
+
+var harlequin= new character("harlequin")
+
+
+harlequin.addSkill("rage")
+harlequin.addSkill("bandage")
+harlequin.addSkill("herblore")
+harlequin.addSkill("poultice")
+harlequin.addSkill("brew")
+harlequin.addSkill("powder")
+harlequin.addSkill("augment")
+harlequin.addSkill("bowman")
+harlequin.addSkill("archer")
+harlequin.addSkill("deadeye")
+// harlequin.addSkill("weaponMastery")
+// console.log("Minimum stats required for skills" )
+// console.log(harlequin.stats)
+// console.log("Used stat points: " + harlequin.remainingstats.used)
+// console.log("Remaining stat points: " + harlequin.remainingstats.remaining)
+// console.log("Total stat points: " + harlequin.remainingstats.max)
+// console.log("chosen skills " + harlequin.remainingstats.skillPointsUsed + "/" + harlequin.remainingstats.skillPointsMax )
+// console.log(Object.keys(harlequin.chosen))
+// console.log("potential Skills count" )
+// console.log(Object.keys(harlequin.potential).length)
+
+function displaychar (char){
+    console.log("Character: "+char.name)
+    console.log("Minimum stats required for skills" )
+    console.log(char.stats)
+    console.log("Used stat points: " + char.remainingstats.used)
+    console.log("Remaining stat points: " + char.remainingstats.remaining)
+    console.log("Total stat points: " + char.remainingstats.max)
+    console.log("chosen skills " + char.remainingstats.skillPointsUsed + "/" + char.remainingstats.skillPointsMax )
+    console.log(Object.keys(char.chosen))
+    console.log("potential Skills count" )
+    console.log(Object.keys(char.potential).length)
+    
+}
+displaychar(harlequin)

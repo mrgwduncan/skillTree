@@ -98,3 +98,6 @@ function character(name,) {
       }
     }
 } 
+
+module.exports = character
+    
