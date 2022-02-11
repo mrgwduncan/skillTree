@@ -19,7 +19,7 @@
   "homepage": "https://github.com/dev-academy-challenges/express-server#readme",
   "dependencies": {
     "express": "^4.16.4",
-    "express-handlebars": "^3.0.2"
+    "express-handlebars": "^5.3.1"
   },
   "devDependencies": {
     "jest": "^24.5.0",
